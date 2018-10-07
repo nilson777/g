@@ -43,7 +43,7 @@ export class foodIonicApp {
 
 
         this.appMenuItems = [
-            {title: 'Restaurants', component: 'page-restaurant-list', icon: 'home'},
+            {title: 'Restaurantes', component: 'page-restaurant-list', icon: 'home'},
             {title: 'Dish List', component: 'page-dish-list', icon: 'pizza'},
             {title: 'Nearby', component: 'page-nearby', icon: 'compass'},
             {title: 'By Category', component: 'page-category', icon: 'albums'},

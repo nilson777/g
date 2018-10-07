@@ -2,7 +2,7 @@
 <ion-header>
   <ion-navbar color="primary">
     <ion-title>
-      <span ion-text>Checkout</span>
+      <span ion-text>Pagar</span>
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -41,13 +41,13 @@
 								</ion-card>
 							</ion-col>
 							<ion-col col-4 no-padding>
-								<span ion-text color="primary" class="text-11x">Order Number</span>
+								<span ion-text color="primary" class="text-11x">Número de orden</span>
 								<br/>
 								<ion-badge color="light" class="text-primary">003454890</ion-badge>
 								<div>
-									<span ion-text color="primary" class="text-11x">Delivery Time:</span>
+									<span ion-text color="primary" class="text-11x">Tiempo de entrega</span>
 									<br/>
-									<ion-badge color="light" class="text-primary">30 - 60min</ion-badge>
+									<ion-badge color="light" class="text-primary">15 - 30min</ion-badge>
 								</div>
 							</ion-col>
 						</ion-row>
@@ -56,7 +56,7 @@
 				</ion-card>
 
 				<!--payment info-->
-				<div padding>
+				<!--<div padding>
 					<h3>Payment Methods</h3>
 
 					<ion-segment color="dark" [(ngModel)]="paymethods">
@@ -85,7 +85,7 @@
 										<ion-item no-padding>
 											<ion-input type="text" placeholder="Card Holder"></ion-input>
 				<!--               <ion-icon name="person" item-end no-margin></ion-icon> -->
-										</ion-item>
+				<!--						</ion-item>
 									</ion-col>
 								</ion-row>
 								<ion-row>

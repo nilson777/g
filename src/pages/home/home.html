@@ -4,7 +4,7 @@
       <ion-icon name="menu"></ion-icon>
     </button>
     <ion-title>
-      <span ion-text class="fw700">Food</span><span ion-text class="fw300">Ionic</span>
+      <span ion-text class="fw700"></span>¿Dónde comemos?<span ion-text class="fw300"></span>
     </ion-title>
     <ion-buttons end>
       <button ion-button (click)="presentNotifications($event)">
@@ -34,11 +34,11 @@
 
 				<ion-card no-margin margin-bottom>
 			    <ion-item class="lightest-bg">
-			      <h3 ion-text no-margin color="dark" class="fw500 no-margin">Restaurants near you:</h3>
+			      <h3 ion-text no-margin color="dark" class="fw500 no-margin">Restaurantes cercanos a ti:</h3>
 			      <span ion-text class="text-11x no-margin" color="primary">{{yourLocation}}</span>
 			      <button ion-button outline round item-end icon-right color="primary" (click)="alertLocation()">
-			      	Change Location
-			      	<ion-icon name="locate"></ion-icon>
+					  Cambiar ubicación
+					  <ion-icon name="locate"></ion-icon>
 			      </button>
 			    </ion-item>
 				</ion-card>
@@ -63,8 +63,8 @@
 
 	  <ion-row padding>
 	    <button ion-button round block color="secondary" (click)="openRestaurantListPage()">
-	      See more
-	    </button>
+			Ver más
+		</button>
 	  </ion-row>
 
 	</ion-grid>
@@ -76,15 +76,15 @@
 		<ion-row no-padding>
 			<button ion-button icon-left block color="primary" (click)="openNearbyPage()" class="col col-4">
         	<ion-icon name="compass" class="text-18x"></ion-icon>
-        	<span ion-text class="text-12x">Nearby</span>
+        	<span ion-text class="text-12x">Cercanos</span>
 			</button>
 			<button ion-button icon-left block color="primary" (click)="openCategoryPage()" class="col col-4">
           <ion-icon name="albums" class="text-18x"></ion-icon>
-          <span ion-text class="text-12x">By Category</span>
+          <span ion-text class="text-12x">Categoría  </span>
 			</button>
 			<button ion-button icon-left block color="primary" (click)="openOrders()" class="col col-4">
         	<ion-icon name="list-box" class="text-18x"></ion-icon>
-        	<span ion-text class="text-12x">Orders</span>
+        	<span ion-text class="text-12x">Ordenes</span>
 			</button>
 		</ion-row>
 	</ion-grid>

@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar color="primary">
     <ion-title>
-      <span ion-text>Restaurant</span>
+      <span ion-text>Restaurante</span>
     </ion-title>
 
     <ion-buttons end>
@@ -32,7 +32,7 @@
       <h1 ion-text color="dark" class="card-title fw700" text-center>
       	{{restaurant.title}}
      	</h1>
-      <p ion-text color="primary" text-center>1 mile<sup>sq</sup> • 30 - 60min • {{restaurant.price}}</p>
+      <p ion-text color="primary" text-center>30 metros<sup>mt</sup> • 5 - 35min • {{restaurant.price}}</p>
       <div text-center>
 		<ion-badge color="secondary">{{restaurant.tags}}</ion-badge>
       	<ion-badge color="dark" class="text-11x">
@@ -50,11 +50,11 @@
 			      Menu
 			    </ion-segment-button>
 			    <ion-segment-button value="reviews">
-			      Reviews
+					Opiniones
 			    </ion-segment-button>
 			    <ion-segment-button value="info">
-			      Information
-			    </ion-segment-button>
+					Información
+				</ion-segment-button>
 			  </ion-segment>
 
 				<div [ngSwitch]="restaurantopts" padding>
@@ -109,17 +109,17 @@
 						<hr margin-bottom>
 
 						<h2>
-							<span ion-text class="fw700">About</span>
+							<span ion-text class="fw700">Información </span>
 						</h2>
 						<p ion-text margin-bottom>{{ restaurant.description }}</p>
 
 						<h2>
-							<span ion-text class="fw700">Hours</span>
+							<span ion-text class="fw700">Horas</span>
 						</h2>
 						<p ion-text margin-bottom>Open 11AM • Closes 11PM</p>
 
 						<h2>
-							<span ion-text class="fw700">Phone</span>
+							<span ion-text class="fw700">Contacto</span>
 						</h2>
 						<p ion-text margin-bottom>+1 (212) 999 0001</p>
 

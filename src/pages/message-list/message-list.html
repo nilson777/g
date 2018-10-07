@@ -4,7 +4,7 @@
             <ion-icon name="menu"></ion-icon>
         </button>
         <ion-title>
-        	<span ion-text>Messages</span>
+        	<span ion-text>Mensajes</span>
         </ion-title>
     </ion-navbar>
 </ion-header>
@@ -16,7 +16,7 @@
 			<ion-col>
 				<ion-card *ngIf="!messages.length" class="primary-bg" margin-top>
 					<ion-card-content>
-						<p text-center class="text-white">You have no messages yet.</p>
+						<p text-center class="text-white">Aún no tiene mensajes.</p>
 					</ion-card-content>
 				</ion-card>
 
@@ -31,7 +31,7 @@
 							<p>{{message.senderName}} ∙ {{message.date | date: 'MM/dd/yyyy'}}</p>
 						</button>
 						<ion-item-options>
-							<button ion-button color="danger" (click)="deleteItem(message)">Delete</button>
+							<button ion-button color="danger" (click)="deleteItem(message)">Borrar</button>
 						</ion-item-options>
 					</ion-item-sliding>
 				</ion-list>

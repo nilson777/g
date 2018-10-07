@@ -1,3 +1,4 @@
+<!-- Descripcion de cada plato-->
 <ion-header>
     <ion-navbar color="primary">
         <ion-title>
@@ -27,7 +28,7 @@
 	      <ion-grid class="filters" no-padding fixed>
 	        <ion-row margin-bottom>
 	          <ion-col text-center>
-	          	<h4 ion-text color="light">Price</h4>
+	          	<h4 ion-text color="light">Precio</h4>
 	            <h1 ion-text class="text-white fw700">{{ dish.price | currency }}</h1>
 	            <hr margin-vertical>
 	          </ion-col>
@@ -38,7 +39,7 @@
 	                      color="secondary"></ion-icon>
 	          </ion-col>
 	          <ion-col width-10 text-center>
-	          	<h4 ion-text color="light">Quantity:</h4>
+	          	<h4 ion-text color="light">Cantidad:</h4>
 	          	<h2 ion-text>{{ qtd }}</h2>
 	          </ion-col>
 	          <ion-col width-10 text-center>
@@ -49,7 +50,7 @@
 				<ion-col text-center>
 		      <button ion-button color="secondary" icon-left tappable (click)="addcart(dish, qtd)">
 		      	<ion-icon name="cart"></ion-icon>
-		      	Add Cart ({{ dish.price * qtd | currency }})
+		      	Agregar al carrito ({{ dish.price * qtd | currency }})
 		      </button>
 				</ion-col>
 	        </ion-row>
@@ -61,10 +62,10 @@
 
   <ion-card>
     <ion-card-content>
-      <h2 ion-text color="primary" class="fw500">Ingredients</h2>
+      <h2 ion-text color="primary" class="fw500">Ingredientes</h2>
       <p ion-text>{{dish.ingredients}}</p>
 			<hr>
-      <h2 ion-text color="primary" class="fw500">Description</h2>
+      <h2 ion-text color="primary" class="fw500">Descripción </h2>
       <p ion-text>{{dish.description}}</p>
     </ion-card-content>
   </ion-card>

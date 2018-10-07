@@ -4,7 +4,7 @@
             <ion-icon name="menu"></ion-icon>
         </button>
         <ion-title>
-            <span ion-text>Your Restaurant</span>
+            <span ion-text>Su restaurante</span>
         </ion-title>
     </ion-navbar>
 </ion-header>
@@ -16,7 +16,7 @@
 			<ion-col>
 				<ion-card class="primary-bg">
 					<ion-card-content>
-						<p class="text-white">Complete the form with your restaurant data and register it.</p>
+						<p class="text-white">Complete el formulario para poder registrar su negocio</p>
 					</ion-card-content>
 				</ion-card>
 
@@ -24,33 +24,30 @@
 					<ion-card-content>
 						<form [formGroup]="onYourRestaurantForm" class="list-form">
 							<ion-list margin-bottom>
-								<ion-item>
-									<ion-label>Complement with my account/profile data:</ion-label>
-									<ion-checkbox formControlName="profiledata"></ion-checkbox>
-								</ion-item>
+
 								<p ion-text color="danger" class="text-1x has-error" *ngIf="onYourRestaurantForm.get('profiledata').touched && onYourRestaurantForm.get('profiledata').hasError('required')">This field is required</p>
 
 								<ion-item>
-									<ion-label color="primary" stacked>Restaurant title:</ion-label>
+									<ion-label color="primary" stacked>Nombre:</ion-label>
 									<ion-input type="text" placeholder="Type here..." formControlName="restaurantTitle"></ion-input>
 								</ion-item>
 								<p ion-text color="danger" class="text-1x has-error" *ngIf="onYourRestaurantForm.get('restaurantTitle').touched && onYourRestaurantForm.get('restaurantTitle').hasError('required')">This field is required</p>
 
 								<ion-item>
-									<ion-label color="primary" stacked>Restaurant Address:</ion-label>
+									<ion-label color="primary" stacked>Dirección:</ion-label>
 									<ion-input type="text" placeholder="Type here..." formControlName="restaurantAddress"></ion-input>
 								</ion-item>
 								<p ion-text color="danger" class="text-1x has-error" *ngIf="onYourRestaurantForm.get('restaurantAddress').touched && onYourRestaurantForm.get('restaurantAddress').hasError('required')">This field is required</p>
 
 								<ion-item>
-									<ion-label color="primary" stacked>Restaurant Type:</ion-label>
+									<ion-label color="primary" stacked>Tipo de restaurante:</ion-label>
 									<ion-select formControlName="restaurantType">
 										<ion-option value="house">Pasta</ion-option>
 										<ion-option value="mansion">Pizza</ion-option>
-										<ion-option value="Apartment">Fast Food</ion-option>
-										<ion-option value="comroom">Street Food</ion-option>
-										<ion-option value="farm">Barbecue</ion-option>
-										<ion-option value="farm">Veggie</ion-option>
+										<ion-option value="Apartment">Comida Rápida </ion-option>
+										<ion-option value="comroom">Comida de la calle</ion-option>
+										<ion-option value="farm">Barbacoa</ion-option>
+										<ion-option value="farm">Vegana</ion-option>
 									</ion-select>
 								</ion-item>
 
@@ -58,7 +55,7 @@
 							</ion-list>
 
 							<div padding-vertical>
-								<h5 ion-text color="dark" margin-bottom class="fw500">Add Images of Restaurant <span ion-text class="fw300">(Max. 5)</span></h5>
+								<h5 ion-text color="dark" margin-bottom class="fw500">Agregar imagenes <span ion-text class="fw300">(Max. 5)</span></h5>
 								<button ion-button icon-only color="light">
 									<ion-icon name="photos" color="dark"></ion-icon>
 								</button>
@@ -77,34 +74,34 @@
 							</div>
 
 							<div padding-vertical>
-								<h5 ion-text color="dark" margin-bottom class="fw500">Add Dishes</h5>
+								<h5 ion-text color="dark" margin-bottom class="fw500">Agregar plato</h5>
 
 								<ion-list margin-bottom>
 									<ion-item>
-										<ion-label color="primary" stacked>Dish Name:</ion-label>
+										<ion-label color="primary" stacked>Nombre del plato:</ion-label>
 										<ion-input type="text" placeholder="Type here..."></ion-input>
 									</ion-item>
 									<ion-item>
-										<ion-label color="primary" stacked>Dish Type:</ion-label>
+										<ion-label color="primary" stacked>Tipo de plato:</ion-label>
 										<ion-select formControlName="restaurantType">
 											<ion-option value="house">Pasta</ion-option>
 											<ion-option value="mansion">Pizza</ion-option>
-											<ion-option value="Apartment">Fast Food</ion-option>
-											<ion-option value="comroom">Street Food</ion-option>
-											<ion-option value="farm">Barbecue</ion-option>
-											<ion-option value="farm">Veggie</ion-option>
+											<ion-option value="Apartment">Comida Rápida </ion-option>
+											<ion-option value="comroom">Comida de la calle</ion-option>
+											<ion-option value="farm">Comida de mar</ion-option>
+											<ion-option value="farm">Vegana</ion-option>
 										</ion-select>
 									</ion-item>
 									<ion-item>
-										<ion-label color="primary" stacked>Dish Ingredients:</ion-label>
+										<ion-label color="primary" stacked>Ingredientes:</ion-label>
 										<ion-textarea rows="5" placeholder="Type here..."></ion-textarea>
 									</ion-item>
 									<ion-item>
-										<ion-label color="primary" stacked>Dish Price:</ion-label>
+										<ion-label color="primary" stacked>Precio:</ion-label>
 										<ion-input type="text" placeholder="Type here..."></ion-input>
 									</ion-item>
 									<ion-item>
-										<h6 ion-text color="dark" margin-bottom class="fw500">Add Images of Dish <span ion-text class="fw300">(Max. 5)</span></h6>
+										<h6 ion-text color="dark" margin-bottom class="fw500">Imagenes del plato <span ion-text class="fw300">(Max. 5)</span></h6>
 										<button ion-button icon-only color="light">
 											<ion-icon name="photos" color="dark"></ion-icon>
 										</button>
@@ -124,7 +121,7 @@
 								</ion-list>
 							</div>
 
-							<button ion-button block color="dark" (click)="sendData()" [disabled]="!onYourRestaurantForm.valid">Register</button>
+							<button ion-button block color="dark" (click)="sendData()" [disabled]="!onYourRestaurantForm.valid">Registrar</button>
 						</form>
 					</ion-card-content>
 				</ion-card>

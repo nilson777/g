@@ -14,9 +14,9 @@
 	            </ion-avatar>
 
 	            <h2 ion-text class="text-white fw700 text-15x">
-	              João Firmino
+	              Antonio Vela
 	            </h2>
-	            <p ion-text color="light">São Paulo, Brazil</p>
+	            <p ion-text color="light">La Paz</p>
 
 					    <button ion-button icon-left round color="primary" menuClose (click)="openPage(accountMenuItems[1])">
 					      <ion-icon [name]="accountMenuItems[1].icon"></ion-icon>
@@ -44,7 +44,7 @@
 
 	      <button menuClose ion-item (click)="openPage(messagesItem)">
 	        <ion-icon item-left name="mail"></ion-icon>
-	        Messages
+	        Mensajes
 	        <ion-badge color="dark">
 	          2
 	        </ion-badge>
@@ -64,7 +64,7 @@
 
 	    <ion-list class="user-list">
 	      <ion-list-header no-margin>
-	        <span ion-text color="light" class="fw500">Your Restaurant</span>
+	        <span ion-text color="light" class="fw500">Tu restaurante</span>
 	      </ion-list-header>
 	      <button menuClose ion-item *ngFor="let menuItem of yourRestaurantMenuItems" (click)="openPage(menuItem)">
 	        <ion-icon item-left [name]="menuItem.icon"></ion-icon>
@@ -74,7 +74,7 @@
 
 	    <ion-list class="user-list">
 	      <ion-list-header no-margin>
-	        <span ion-text color="light" class="fw500">Help & Settings</span>
+	        <span ion-text color="light" class="fw500">Ayuda y Conf</span>
 	      </ion-list-header>
 	      <button menuClose ion-item *ngFor="let menuItem of helpMenuItems" (click)="openPage(menuItem)">
 	        <ion-icon item-left [name]="menuItem.icon"></ion-icon>

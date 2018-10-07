@@ -18,20 +18,11 @@ export class WalkthroughPage {
 
   slideList: Array<any> = [
     {
-      title: "What is <strong>Food</strong>Ionic?",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus, dui accumsan cursus lacinia, nisl risus.",
+      title: " Que es <strong>Donde Comemos</strong>?",
+      description: "Es la app que te permite encontrar el lugar perfecto para ti",
       image: "assets/img/foodIonic-ico.png",
     },
-    {
-      title: "Why FoodIonic?",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus, dui accumsan cursus lacinia, nisl risus.",
-      image: "assets/img/foodIonic-ico.png",
-    },
-    {
-      title: "Your delicious dish is coming!",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus, dui accumsan cursus lacinia, nisl risus.",
-      image: "assets/img/foodIonic-ico.png",
-    }
+
   ];
 
   constructor(public navCtrl: NavController, public menu: MenuController) {

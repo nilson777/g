@@ -1,10 +1,11 @@
+<!-- restaurantes favoritos -->
 <ion-header>
     <ion-navbar color="primary">
         <button ion-button menuToggle>
             <ion-icon name="menu"></ion-icon>
         </button>
         <ion-title>
-        	<span ion-text>Favorite Restaurants</span>
+        	<span ion-text>Restaurantes favoritos</span>
         </ion-title>
     </ion-navbar>
 </ion-header>
@@ -17,7 +18,7 @@
 
 				<ion-card *ngIf="!favorites.length" class="primary-bg" margin-top>
 					<ion-card-content>
-						<p text-center class="text-white">You have no favorite restaurants.</p>
+						<p text-center class="text-white">No tiene restaurantes favoritos.</p>
 					</ion-card-content>
 				</ion-card>
 

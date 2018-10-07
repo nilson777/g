@@ -1,4 +1,4 @@
-<!-- -->
+<!-- Pagina de inicio-->
 <ion-content padding class="profiles-bg">
 	<div class="auth-content">
 
@@ -8,17 +8,17 @@
 				<img src="assets/img/foodIonic-ico.png">
 			</div>
 			<h2 ion-text class="text-secondary" no-margin>
-				<strong>Food</strong>Ionic
+				<strong>¿Dónde comemos?</strong>
 			</h2>
 		</div>
 
 		<div padding-vertical>
 		  <ion-segment [(ngModel)]="auth" color="light">
 		    <ion-segment-button value="login">
-		      Login
+		      Ingresar
 		    </ion-segment-button>
 		    <ion-segment-button value="register">
-		      Register
+		      Registrarse
 		    </ion-segment-button>
 		  </ion-segment>
 		</div>
@@ -39,22 +39,22 @@
 					<ion-item>
 						<ion-label floating>
 							<ion-icon name="lock" item-start class="text-white"></ion-icon>
-							Password
+							Contraseña
 						</ion-label>
 						<ion-input type="password" formControlName="password"></ion-input>
 					</ion-item>
 					<p ion-text color="danger" class="text-12x has-error" *ngIf="onLoginForm.get('password').touched && onLoginForm.get('password').hasError('required')">This field is required</p>
 				</form>
 
-				<p text-right ion-text color="light" tappable (click)="forgotPass()"><strong>Forgot Password?</strong></p>
+				<p text-right ion-text color="light" tappable (click)="forgotPass()"><strong>Olvido su contraseña?</strong></p>
 
 				<div>
 					<button ion-button icon-start block color="secondary" (click)="login()" [disabled]="!onLoginForm.valid">
 						<ion-icon name="log-in"></ion-icon>
-						SIGN IN
+						ENTRAR
 					</button>
 
-					<p text-center ion-text color="light">Or Sign in with:</p>
+					<p text-center ion-text color="light">Ingrese con:</p>
 
 					<ion-grid class="btn-group" fixed>
 						<ion-row>
@@ -79,7 +79,7 @@
 		      <ion-item>
 		        <ion-label floating>
 		          <ion-icon name="person" item-start class="text-white"></ion-icon>
-		          Full Name
+		          Nombre
 		        </ion-label>
 		        <ion-input type="text" formControlName="fullName"></ion-input>
 		      </ion-item>
@@ -97,7 +97,7 @@
 		      <ion-item>
 		        <ion-label floating>
 		          <ion-icon name="lock" item-start class="text-white"></ion-icon>
-		          Password
+					Contraseña
 		        </ion-label>
 		        <ion-input type="password" formControlName="password"></ion-input>
 		      </ion-item>
@@ -106,10 +106,10 @@
 
 		    <div margin-top>
 		      <button ion-button block color="secondary" (click)="login()" [disabled]="!onRegisterForm.valid">
-		        SIGN UP
+		        REGISTRAR
 		      </button>
 
-		      <p text-center ion-text color="light">Or Sign Up with:</p>
+		      <p text-center ion-text color="light">O registrarse con</p>
 
 		      <ion-grid class="btn-group" fixed>
 		        <ion-row>

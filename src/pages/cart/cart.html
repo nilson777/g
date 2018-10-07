@@ -4,7 +4,7 @@
             <ion-icon name="menu"></ion-icon>
         </button>
         <ion-title>
-        	<span ion-text>Cart</span>
+        	<span ion-text>Carrito</span>
         </ion-title>
     </ion-navbar>
 </ion-header>
@@ -17,7 +17,7 @@
 			<ion-col>
 				<ion-card *ngIf="!orders.length" class="primary-bg" margin-top>
 					<ion-card-content>
-						<p text-center class="text-white">You still haven't any item.</p>
+						<p text-center class="text-white">No tiene ningun item registrado.</p>
 					</ion-card-content>
 				</ion-card>
 
@@ -50,18 +50,18 @@
 									</div>
 							</div>
 							<ion-item-options>
-									<button ion-button color="danger" (click)="removeOrder(order)">Delete</button>
+									<button ion-button color="danger" (click)="removeOrder(order)">Borrar</button>
 							</ion-item-options>
 					</ion-item-sliding>
 				</ion-list>
 
 				<ion-card class="primary-bg" *ngIf="orders.length">
 					<ion-card-content>
-						<p ion-text color="light">Delivery Tax (30 - 60min): <span class="fw700">FREE</span></p>
+						<p ion-text color="light">Tiempo de envio (30 - 60min): <span class="fw700">FREE</span></p>
 
 						<hr>
 
-						<p ion-text color="light">Total Order Value</p>
+						<p ion-text color="light">Valor total de la orden</p>
 						<h2 ion-text class="text-white fw700">{{ totalVal | currency }}</h2>
 					</ion-card-content>
 				</ion-card>
@@ -72,7 +72,7 @@
 
 <ion-footer *ngIf="orders.length" class="no-padding">
 	<button ion-button full large color="dark" no-margin icon-right (click)="openCheckout()">
-		Checkout
+		Pagar
 		<ion-icon name="card"></ion-icon>
 	</button>
 </ion-footer>

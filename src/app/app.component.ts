@@ -45,32 +45,32 @@ export class foodIonicApp {
 
 
         this.appMenuItems = [
-            {title: 'Restaurants', component: 'page-restaurant-list', icon: 'home'},
-            {title: 'Dish List', component: 'page-dish-list', icon: 'pizza'},
-            {title: 'Nearby', component: 'page-nearby', icon: 'compass'},
-            {title: 'By Category', component: 'page-category', icon: 'albums'},
-            {title: 'Latest Orders', component: 'page-orders', icon: 'list-box'},
-            {title: 'Cart', component: 'page-cart', icon: 'cart'},
-			{title: 'Favorite Restaurants', component: 'page-favorite-list', icon: 'heart'},
-			{title: 'Favorite Dishes', component: 'page-favorite-dish', icon: 'heart'}
+            {title: 'Restaurantes', component: 'page-restaurant-list', icon: 'home'},
+            {title: 'Lista de platos', component: 'page-dish-list', icon: 'pizza'},
+            {title: 'Cercanos', component: 'page-nearby', icon: 'compass'},
+            {title: 'Por categorías', component: 'page-category', icon: 'albums'},
+            {title: 'Últimos pedidos', component: 'page-orders', icon: 'list-box'},
+            {title: 'Carrito', component: 'page-cart', icon: 'cart'},
+			{title: 'Restaurante favorito', component: 'page-favorite-list', icon: 'heart'},
+			{title: 'Plato favorito', component: 'page-favorite-dish', icon: 'heart'}
         ];
 
         this.yourRestaurantMenuItems = [
-            {title: 'Register Restaurant', component: 'page-your-restaurant', icon: 'clipboard'}
+            {title: 'Registrar restaurante', component: 'page-your-restaurant', icon: 'clipboard'}
         ];
 
 
         this.accountMenuItems = [
             {title: 'Login', component: 'page-auth', icon: 'log-in'},
-            {title: 'My Account', component: 'page-my-account', icon: 'contact'},
-            {title: 'Logout', component: 'page-auth', icon: 'log-out'},
+            {title: 'Mi cuenta', component: 'page-my-account', icon: 'contact'},
+            {title: 'Salir', component: 'page-auth', icon: 'log-out'},
         ];
 
         this.helpMenuItems = [
-            {title: 'About', component: 'page-about', icon: 'information-circle'},
-            {title: 'Support', component: 'page-support', icon: 'call'},
-            {title: 'App Settings', component: 'page-settings', icon: 'cog'},
-            {title: 'Walkthrough', component: 'page-walkthrough', icon: 'photos'}
+            {title: 'Info', component: 'page-about', icon: 'information-circle'},
+            {title: 'Soporte', component: 'page-support', icon: 'call'},
+            {title: 'Configuración', component: 'page-settings', icon: 'cog'},
+
         ];
 
     }
